@@ -1,0 +1,18 @@
+.Navbar {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.Login {
+  background-color: blue;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 4px;
+}

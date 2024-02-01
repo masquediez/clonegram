@@ -1,0 +1,31 @@
+.Gallery {
+  margin: 0 auto; /* Centra el grid */
+  max-width: 80%; /* Establece el ancho máximo al 80% de la pantalla */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.Gallery img {
+  width: 100%; /* Asegura que las imágenes ocupen el 100% del contenedor */
+  height: auto; /* Mantiene la proporción original de la imagen */
+  object-fit: cover; /* Cubre el contenedor manteniendo la relación de aspecto */
+}
+
+@media (max-width: 1200px) {
+  .Gallery {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .Gallery {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .Gallery {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  }
+}

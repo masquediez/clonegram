@@ -1,0 +1,96 @@
+.Nombre {
+  display: flex;
+  margin: 4px;
+  padding: 4px;
+}
+
+@media only screen and (max-width: 600px) {
+  .Profil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: brown;
+    width: 99%;
+    margin: 4px;
+    padding: 4px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .Profil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(42, 165, 83);
+    width: 99%;
+    margin: 4px;
+    padding: 4px;
+  }
+}
+@media only screen and (min-width: 901px) and (max-width: 1040px) {
+  .Profil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(138, 165, 42);
+    align-items: center;
+    width: 99%;
+    margin: 4px;
+    padding: 4px;
+  }
+}
+@media only screen and (min-width: 1041px) {
+  .Profil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(69, 42, 165);
+    width: 99%;
+    margin: 4px;
+    padding: 4px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Profil {
+    justify-content: center;
+    align-items: center;
+    img {
+      background-color: lightblue;
+
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .Profil {
+    img {
+      background-color: lightgreen;
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+@media only screen and (min-width: 901px) and (max-width: 1440px) {
+  .Profil {
+    img {
+      background-color: lightyellow;
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1041px) {
+  .Profil {
+    img {
+      background-color: lightyellow;
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
