@@ -1,28 +1,15 @@
-import faker from "faker";
+import { faker } from "@faker-js/faker";
 
-const generateDatabaseResponse = () => {
-  const followerCount = faker.random.number(10000);
-  const followingCount = faker.random.number(100);
-  const postCount = faker.random.number(20);
-
-  const profile = {
-    followerCount,
-    followingCount,
-    postCount,
-    name: faker.name.findName(),
-    age: faker.random.number({ min: 18, max: 99 }), // Edad entre 18 y 99 años
-    job: faker.name.jobTitle(),
-    country: faker.address.country(),
+const generateFakeData = () => {
+  return {
+    name: faker.person.firstName() + " " + faker.person.lastName(),
+    age: faker.datatype.number({ min: 18, max: 99 }),
+    profession: faker.name.jobTitle(),
   };
-
-  const posts = Array.from({ length: 6 }, () => ({
-    image: faker.image.imageUrl(),
-    text: faker.lorem.lines(2),
-  }));
-
-  return { profile, posts };
 };
 
-const DatabaseResponse = generateDatabaseResponse();
-
-export default DatabaseResponse;
+export const getDatabaseResponse = () => {
+  return {
+    profile: generateFakeData(),
+  };
+};
